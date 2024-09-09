@@ -1,7 +1,14 @@
+html{position: relative;
+
+}
+
+
 body{
     padding: 0;
     margin: 0;
     --box-size:150px;
+    height: 100vh;
+    
 }
 
 main{
@@ -15,6 +22,11 @@ main{
 } */
 
 
+#Blocks{
+border: solid;
+/* position: relative; */
+}
+
 #Blocks div{
     width: var(--box-size);
     height: var(--box-size);  
@@ -22,20 +34,21 @@ main{
     background-color: black;
 }
 
-#Blocks .red{
-    background-color: red;
 
+
+#Blocks div:nth-child(2){
+    background-color: red;
 }
 
 
+#Blocks div:nth-child(2)::before{
+    content: "bc";
+}
 
 
-
-
-
-
-
-
+#Blocks div:nth-child(2)::first-letter{
+    font-size: larger;
+}
 
 
 
