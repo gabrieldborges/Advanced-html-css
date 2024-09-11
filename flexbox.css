@@ -1,3 +1,27 @@
-body{
-    color: blue;
+* {
+  margin: 0;
+  padding: 0;
+}
+#container {
+  /* width: 50vw; */
+  height: 50vh;
+  border: 2px dashed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 0.5vh; */
+  align-content: space-around;
+  flex-flow: nowrap column-reverse;
+}
+.item {
+  /* flex-basis: 100%; */
+  text-align: center;
+  border: solid;
+  flex: 1 1 auto;
+  align-content: center;
+}
+
+.item:nth-child(8),
+.item:nth-child(1),
+.item:nth-child(3) {
 }
